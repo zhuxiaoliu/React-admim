@@ -12,11 +12,11 @@ const Bar=()=>{
     let mapInstance = null;
     const option = {
         grid: {
-            left:40,
-            right:10,
-            top:50,
-            bottom:40,
-            },
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
         legend: {
             align: 'left',
             y: '10',
