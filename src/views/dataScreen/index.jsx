@@ -9,6 +9,8 @@ import { useLayoutEffect, useRef } from "react";
 import Bar  from './components/bar';
 import Line from './components/line';
 import SummaryCard from './components/summaryCard';
+import ChinaMap from './components/chinaMap';
+import Radar from './components/radar';
 import './index.less';
 const DataScreen =()=>{
     const dataScreenRef = useRef();
@@ -59,10 +61,16 @@ const DataScreen =()=>{
                     
                 </div>
                 <div className='datascreen-container content-middle'>
-                    middle
+                    <ChinaMap></ChinaMap>
                 </div>
                 <div className='datascreen-container content-right'>
-                    right
+                    <div className='right-item'>
+                        <div className='right-title'>违法数量和类型分布</div>
+                        <Radar></Radar>
+                    </div>
+                    <div className='right-item'>
+                        <Radar></Radar>
+                    </div>
                 </div>
             </div>
 
