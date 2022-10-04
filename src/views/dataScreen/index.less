@@ -98,9 +98,95 @@
                         }
                    
                 }
-                .bar3 {
+                .table3 {
                     height: 30%;
+                    position: relative;
+                    width:100%;
+                    .summaryCard {
+                        width: 100%;
+                        color: #d8dee0;
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 20px;
+                        .title {
+                            display: flex;
+                            align-items: center;
+                        }
+                        .way {
+                            width: 20%;
+                            display: flex;
+                            text-align: center;
+                        }
+                        .passengerTraffic {
+                            width: 35%;
+                            display: flex;
+                            text-align: center;
+                         }
+                        .freight {
+                            width: 35%;
+                            display: flex;
+                            text-align: center;
+                        }
+                        .summary-body {
+                            width: 100%;
+                            color: #d8dee0;
+                            font-size: 16px;
+                            font-weight: 600;
+                            .eachLine {
+                                height: 60px;
+                                background-color: #0828454d;
+                                border: 1px solid #0e406e;
+                                margin-top: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                .people-num {
+                                    color:#08baa1;
+                                }
+                                .weight-num {
+                                    color: #e3e20d;
+                                }
+                                .imageItem {
+                                    width: 25px;
+                                    height: 25px;
+                                    display: block;
+                                    margin-right: 3px;
+                                }
+                                .item {
+                                    background: linear-gradient(to left,#06aae3,#06aae3) left top no-repeat,linear-gradient(to bottom,#06aae3,#06aae3) left top no-repeat,linear-gradient(to left,#06aae3,#06aae3) right top no-repeat,linear-gradient(to bottom,#06aae3,#06aae3) right top no-repeat,linear-gradient(to left,#06aae3,#06aae3) left bottom no-repeat,linear-gradient(to bottom,#06aae3,#06aae3) left bottom no-repeat,linear-gradient(to left,#06aae3,#06aae3) right bottom no-repeat,linear-gradient(to left,#06aae3,#06aae3) right bottom no-repeat;
+                                    background-size: 5px 1px,1px 5px,5px 1px,1px 5px,5px 1px,1px 5px,5px 1px,1px 5px;
+                                    background-color: #0f365766;
+                                    padding: 10px 0;
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                            }
+
+                        }
+
+                    }
                 }
+                .table3:before{
+                    display: block;
+                    position: absolute;
+                    top: -5px;
+                    left: -2px;
+                    content: "";
+                    width: 111px;
+                    height: 35px;
+                    background-image: url('../../assets//images/dataScreen/border-radius.png');
+                    transform: rotate(180deg);
+                    }
+                .table3:after{
+                    display: block;
+                    position: absolute;
+                    bottom: -5px;
+                    right: -2px;
+                    content: "";
+                    width: 111px;
+                    height: 35px;
+                    background-image: url('../../assets//images/dataScreen/border-radius.png');
+                    }
             }
             .content-middle {
                 width: 42%;

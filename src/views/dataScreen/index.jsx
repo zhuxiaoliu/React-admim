@@ -8,6 +8,7 @@ import React from 'react';
 import { useLayoutEffect, useRef } from "react";
 import Bar  from './components/bar';
 import Line from './components/line';
+import SummaryCard from './components/summaryCard';
 import './index.less';
 const DataScreen =()=>{
     const dataScreenRef = useRef();
@@ -52,8 +53,8 @@ const DataScreen =()=>{
                             <Line></Line>
                         <div className="line2-after" />
                     </div>
-                    <div className='bar3'>
-                       
+                    <div className='table3'>
+                        <SummaryCard></SummaryCard>
                     </div>
                     
                 </div>
