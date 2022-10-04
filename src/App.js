@@ -1,13 +1,26 @@
+/*
+ * @Descripttion: React Admin
+ * @version: 1.0
+ * @Author: zhuyannwen
+ * @Date: 2022-08-29 14:38:31
+ */
 
-import './App.css';
+import './App.less';
 import React, { Component } from 'react';
-import Router from './router'
-import { Button } from 'antd';
+import { BrowserRouter } from "react-router-dom";
+import  Router from '@/router/index';
+import  AuthRouter from '@/router/utils/authRouter'
+
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
-        <Router />
+        <BrowserRouter>
+          <AuthRouter>
+            <Router />
+          </AuthRouter>
+        </BrowserRouter>
       </div>
     );
   }
