@@ -11,6 +11,7 @@ import Line from './components/line';
 import SummaryCard from './components/summaryCard';
 import ChinaMap from './components/chinaMap';
 import Radar from './components/radar';
+import PoliceBar from  './components/policeBar';
 import './index.less';
 const DataScreen =()=>{
     const dataScreenRef = useRef();
@@ -68,8 +69,9 @@ const DataScreen =()=>{
                         <div className='right-title'>违法数量和类型分布</div>
                         <Radar></Radar>
                     </div>
-                    <div className='right-item'>
-                        <Radar></Radar>
+                    <div className='right-item' style={{height:"40%"}}>
+                    <div className='right-title'>警力分布</div>
+                        <PoliceBar></PoliceBar>
                     </div>
                 </div>
             </div>
